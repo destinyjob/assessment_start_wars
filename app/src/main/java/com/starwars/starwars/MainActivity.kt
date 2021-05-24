@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
          * Initializations
          * **/
         val recyclerView : RecyclerView = findViewById(R.id.recyclerView)
-        val linearLayoutManager = GridLayoutManager(this, 3)
-        recyclerView.layoutManager = linearLayoutManager
+        val gridLayoutManager = GridLayoutManager(this, 3)
+        recyclerView.layoutManager = gridLayoutManager
 
         recyclerView.adapter = personsAdapter
         personsAdapter.create(personsList)
